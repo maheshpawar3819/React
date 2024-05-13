@@ -5,11 +5,13 @@ const Countnum = () => {
   const [state, setState] = useState(0);
 
   function Increment() {
-    setState((num) => num + 1);
+    let updatedvalue = state + 1;
+    setState(updatedvalue);
   }
 
-  function Decrement(num) {
-    setState((num) => num - 1);
+  function Decrement() {
+    let updatedvalue = state - 1;
+    setState(updatedvalue);
   }
   return (
     <div>
