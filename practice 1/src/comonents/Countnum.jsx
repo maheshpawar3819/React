@@ -2,19 +2,25 @@ import React from "react";
 import { useState } from "react";
 
 const Countnum = () => {
-    const [state,setState]=useState('hii mahi')
-  return <div>
-    <p className="mt-5">
-    {state}
-    </p>
+  const [state, setState] = useState("hii mahi");
 
-    <button className="btn btn-info m-4">
-        Increment
-    </button>
-    <button className="btn btn-danger">
-        Decrement
-    </button>
-  </div>;
+  function Increment(num){
+    setState(num++);
+    
+  }
+
+  function Decrement(num){
+    setState(num--);
+  }
+  return (
+
+    <div>
+      <p className="mt-5">{state}</p>
+
+      <button className="btn btn-info m-4" onClick={Increment}>Increment</button>
+      <button className="btn btn-danger" onClick={Decrement}>Decrement</button>
+    </div>
+  );
 };
 
 export default Countnum;
