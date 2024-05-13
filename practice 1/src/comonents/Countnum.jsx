@@ -1,22 +1,20 @@
-import React from 'react'
-import { useState } from 'react'
+import React from "react";
+import { useState } from "react";
 
 const Countnum = () => {
-    const [state,useState]=useState("increment decrement");
-  return (
-    <div>
-      <p>
-        {state}
-      </p>
+    const [state,setState]=useState('hii mahi')
+  return <div>
+    <p className="mt-5">
+    {state}
+    </p>
 
-      <button>
+    <button className="btn btn-info m-4">
         Increment
-      </button>
-      <button>
+    </button>
+    <button className="btn btn-danger">
         Decrement
-      </button>
-    </div>
-  )
-}
+    </button>
+  </div>;
+};
 
-export default Countnum
+export default Countnum;
