@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Countnum from './comonents/Countnum'
+import Calculetor from './comonents/Calculetor'
 
 
 
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-     <Countnum/>
+     <Calculetor/>
     </>
   )
 }
