@@ -42,7 +42,7 @@ const Calculetor = () => {
         Add
       </button>
 
-      <button className="btn btn-info offset-2 ps-5 pe-5 p-2" onClick={sub}>
+      <button className="btn btn-danger offset-2 ps-5 pe-5 p-2" onClick={sub}>
         Substract
       </button>
 
