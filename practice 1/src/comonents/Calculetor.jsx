@@ -14,10 +14,10 @@ const Calculetor = () => {
     setinput2(num2.target.value);
   };
 
-  const add=() => {
-    let result=Number(value1)+Number(value2);
+  const add = () => {
+    let result = Number(input1) + Number(input2);
     setdisplay(result);
-  }
+  };
 
   return (
     <div>
@@ -25,14 +25,18 @@ const Calculetor = () => {
         type="text"
         placeholder="number 1"
         className="form-control my-4 col-2 offset-1"
+        onChange={value1}
       />
       <input
         type="text"
         placeholder="number 2"
         className="form-control my-4 col-2 offset-1"
+        onChange={value2}
       />
-      <button className="btn btn-info offset-2 ps-5 pe-5 p-2">Add</button>
-      <p className=" border my-4 col-2 offset-6 p-2">{state}</p>
+      <button className="btn btn-info offset-2 ps-5 pe-5 p-2" onClick={add}>
+        Add
+      </button>
+      <p className=" border my-4 col-2 offset-6 p-2">{display}</p>
     </div>
   );
 };
