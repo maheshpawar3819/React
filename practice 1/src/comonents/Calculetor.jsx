@@ -2,7 +2,13 @@ import React from "react";
 import { useState } from "react";
 
 const Calculetor = () => {
-  const [state, setState] = useState(0);
+  const [input1,setinput1]=useState(0);
+  const [input2,setinput2]=useState(0);
+  const [display,setdisplay]=useState(0);
+ 
+
+
+
   return (
     <div>
         
