@@ -19,6 +19,11 @@ const Calculetor = () => {
     setdisplay(result);
   };
 
+  const sub = () => {
+    let result = Number(input1) - Number(input2);
+    setdisplay(result);
+  };
+
   return (
     <div>
       <input
@@ -36,6 +41,11 @@ const Calculetor = () => {
       <button className="btn btn-info offset-2 ps-5 pe-5 p-2" onClick={add}>
         Add
       </button>
+
+      <button className="btn btn-info offset-2 ps-5 pe-5 p-2" onClick={sub}>
+        Substract
+      </button>
+
       <p className=" border my-4 col-2 offset-6 p-2">{display}</p>
     </div>
   );
