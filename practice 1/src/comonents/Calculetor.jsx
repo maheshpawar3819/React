@@ -8,10 +8,10 @@ const Calculetor = () => {
         
       <input type="text" placeholder="number 1" className="form-control my-4 col-2 offset-1" />
       <input type="text" placeholder="number 2" className="form-control my-4 col-2 offset-1" />
-      <button className="btn btn-info offset-1 ps-5 pe-5 p-2">
+      <button className="btn btn-info offset-2 ps-5 pe-5 p-2">
         Add
       </button>
-        <p className=" border my-4 col-2 offset-1">
+        <p className=" border my-4 col-2 offset-6 p-2">
             {state}
         </p>
     </div>
