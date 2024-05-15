@@ -13,10 +13,10 @@ const Concatword = () => {
     setinput2(event.target.value);
   };
 
-  let add=() => {
-    let result=input1+input2;
+  let add = () => {
+    let result = input1 + input2;
     setresult(result);
-  }
+  };
 
   return (
     <div>
@@ -33,7 +33,10 @@ const Concatword = () => {
         onChange={text2}
       />
 
-      <button className="btn btn-info mt-5 offset-2 p-2 ps-5 pe-5 " onClick={add}>
+      <button
+        className="btn btn-info mt-5 offset-2 p-2 ps-5 pe-5 "
+        onClick={add}
+      >
         Join
       </button>
       <p className="border col-2 offset-6 mt-5 p-4 text-danger fs-4">
