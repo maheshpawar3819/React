@@ -67,27 +67,25 @@ const Listtable = () => {
     <div>
       {list.map((ele) => {
         return (
-          <div>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Standard</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Marks</th>
-                  <tr>
-                  <td>{ele.name}</td>
-                  <td>{ele.standard}</td>
-                  <td>{ele.age}</td>
-                  <td>{ele.marks}</td>
-                </tr>
-                </tr>
-              </thead>
-              <tbody>
+          <table class="table table-restriped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Standard</th>
+                <th scope="col">Age</th>
+                <th scope="col">Marks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{ele.name}</td>
+                <td>{ele.standard}</td>
+                <td>{ele.age}</td>
+                <td>{ele.marks}</td>
                 
-              </tbody>
-            </table>
-          </div>
+              </tr>
+            </tbody>
+          </table>
         );
       })}
     </div>
