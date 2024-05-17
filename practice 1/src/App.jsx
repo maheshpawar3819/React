@@ -6,8 +6,9 @@ import Child from "./comonents/Child";
 function App() {
   const [count, setCount] = useState(0);
 
-  const add=()=> {
-    console.log(1)
+  const add=(prop) => {
+    let sum=prop.input1+prop.input2;
+    setAdd(sum);
   }
   return (
     <>
