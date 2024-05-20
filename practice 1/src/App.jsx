@@ -12,10 +12,7 @@ function App() {
   }
   return (
     <>
-      {/* <Listtable/> */}
-      {/* <Concatword /> */}
-      {/* <Todo/> */}
-      <Child add={add}/>
+  
      
     </>
   );
