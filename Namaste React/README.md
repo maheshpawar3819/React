@@ -1,6 +1,7 @@
 # Namaste Js
 
 # Parcel [benifits of the using parcel]
+
 -dev Build
 -Local Server
 -HMR => Hot Module Replacement
