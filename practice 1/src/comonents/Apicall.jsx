@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
+
 const Apicall = () => {
   const [state, setState] = useState([]);
 
-  const products = () => {
+  const Products = () => {
     axios
-      .get("https://fakestoreapi.com/products")
+      .get(`https://fakestoreapi.com/products`)
       .then((response) => {
         setState(response.data);
       })
@@ -15,18 +16,30 @@ const Apicall = () => {
       });
   };
 
-  //mounting behaviour
-  useEffect(function () {
-    products();
+  useEffect(() => {
+    Products();
   }, []);
 
   return (
-    <div>
+    <div className="row" style={{ width: "100vw" }}>
+      <h1 className="text-secondary " style={{ textAlign: "center" }}>
+        Cloth Store
+      </h1>
       {state.map((ele) => {
-        <div className="col-4">
-          <h1>{ele.title}</h1>
-          <img src={ele.imgage} alt="" />
-        </div>
+        return (
+          <div
+            className="col-4 p-4"
+            style={{ border: "box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" }}
+          >
+            <h2>Product {ele.id}</h2>
+            <h4 className="text-dark">{ele.title}</h4>
+            <img
+              src={ele.image}
+              alt=""
+              style={{ width: "150px", height: "auto" }}
+            />
+          </div>
+        );
       })}
     </div>
   );
