@@ -64,3 +64,43 @@
     width: 200px;
     height: 100%;
 }
+
+.card-main-container {
+    display: flex;
+    /* border: 3px solid black; */
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.card-container {
+    border-radius: 20px;
+    padding: 5px;
+    /* border: 2px solid black; */
+    width: 250px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;}
+
+.rt-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-head{
+    color: #414449;
+    margin: 5px;
+}
+
+
+.rating {
+    color: #16893F;
+    font-weight: 700;
+}
+
+.card-container>p {
+    
+    color: #414449;
+    margin: 5px;
+    font-weight: 100;
+}
+

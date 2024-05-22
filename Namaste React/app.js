@@ -50,8 +50,21 @@ const Header = () => {
 
 const Restorentcard = () => {
   return (
-    <div>
-      <h3>Meghna Food</h3>
+    <div className="card-main-container">
+      <div className="card-container">
+        <img
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kwcm0doqoqn9l8dftuqa"
+          alt="img"
+          className="rt-img"
+        />
+        <h3 className="card-head">Meghna Food</h3>
+        <p id="str-rating">
+          Ratings<span className="rating"> 4.5 </span>30-40 mins
+        </p>
+        <p>South Indian Biryani</p>
+        
+        <p> Nare</p>
+      </div>
     </div>
   );
 };
@@ -60,9 +73,9 @@ const Restorentcard = () => {
 const Body = () => {
   return (
     <div className="body">
-     
       <div className="rest-container">
         <Restorentcard />
+        
       </div>
     </div>
   );
