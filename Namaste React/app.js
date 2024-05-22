@@ -10,6 +10,7 @@ Plan:
   -search
   -restorent container
   -restorent card
+    -Name of restorent,Star rating,cuisine,delivery time
 *Footer
   -Copyright
   -Links
@@ -39,6 +40,29 @@ const Header = () => {
       </div>
     </div>
   );
+};
+
+//Restorent Card Component
+
+const Restorentcard=() => {
+  return <div>
+    <h3>Meghna Food</h3>
+  </div>
+}
+
+//Body Component
+const Body = () => {
+  return <div className="body">
+    <div>
+      <input  type="text" placeholder="Search" name="search"/>
+      <button>
+        Search
+      </button>
+    </div>
+    <div className="rest-container">
+        <Restorentcard/>
+    </div>
+  </div>;
 };
 
 const App = () => {
