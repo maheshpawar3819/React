@@ -62,7 +62,7 @@ const Restorentcard = () => {
           Ratings<span className="rating"> 4.5 </span>30-40 mins
         </p>
         <p>South Indian Biryani</p>
-        
+
         <p> Nare</p>
       </div>
     </div>
@@ -74,8 +74,7 @@ const Body = () => {
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard />
-        
+        <Restorentcard/>
       </div>
     </div>
   );
