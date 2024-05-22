@@ -1,26 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const Mainheading = () => {
-  return (
-    <>
-      <h1 style={{ textAlign: "center" }}>Name of The Author</h1>
-    </>
-  );
-};
 
-const Heading = () => {
+
+
+const App = () => {
   return (
     <>
-      <Mainheading />
-      <ol>
-        <li>Mahesh</li>
-        <li>Dhanaji</li>
-        <li>Pawar</li>
-      </ol>
+     <h1>hii mahi</h1>
     </>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Heading />);
+root.render(<App />);
