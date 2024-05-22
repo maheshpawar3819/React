@@ -30,6 +30,10 @@ const Header = () => {
           className="logo"
         />
       </div>
+      <div className="search-container">
+        <input type="text" placeholder="Search" name="search" />
+        <button>Search</button>
+      </div>
       <div className="nav-items">
         <ul>
           <li>Home</li>
@@ -44,31 +48,31 @@ const Header = () => {
 
 //Restorent Card Component
 
-const Restorentcard=() => {
-  return <div>
-    <h3>Meghna Food</h3>
-  </div>
-}
+const Restorentcard = () => {
+  return (
+    <div>
+      <h3>Meghna Food</h3>
+    </div>
+  );
+};
 
 //Body Component
 const Body = () => {
-  return <div className="body">
-    <div>
-      <input  type="text" placeholder="Search" name="search"/>
-      <button>
-        Search
-      </button>
+  return (
+    <div className="body">
+     
+      <div className="rest-container">
+        <Restorentcard />
+      </div>
     </div>
-    <div className="rest-container">
-        <Restorentcard/>
-    </div>
-  </div>;
+  );
 };
 
 const App = () => {
   return (
     <>
       <Header />
+      <Body />
     </>
   );
 };
