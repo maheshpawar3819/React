@@ -48,7 +48,7 @@ const Header = () => {
 
 //Restorent Card Component
 
-const Restorentcard = () => {
+const Restorentcard = (props) => {
   return (
     <div className="card-main-container">
       <div className="card-container">
@@ -74,7 +74,7 @@ const Body = () => {
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard/>
+        <Restorentcard />
       </div>
     </div>
   );
