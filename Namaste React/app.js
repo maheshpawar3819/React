@@ -46,6 +46,18 @@ const Header = () => {
   );
 };
 
+
+
+
+const data=[
+  {
+    rtname:"Arbain Mandi",
+    Ratings:"4.5 30-40 Min",
+    menu:"North indian biryani",
+    location:"Phaltan",
+  }
+]
+
 //Restorent Card Component
 
 const Restorentcard = (props) => {
@@ -74,7 +86,7 @@ const Body = () => {
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard />
+        <Restorentcard/>
       </div>
     </div>
   );
