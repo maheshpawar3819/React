@@ -51,6 +51,7 @@ const Header = () => {
 
 const data=[
   {
+    img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
     rtname:"Arbain Mandi",
     Ratings:"4.5 30-40 Min",
     menu:"North indian biryani",
@@ -65,8 +66,7 @@ const Restorentcard = (props) => {
     <div className="card-main-container">
       <div className="card-container">
         <img
-          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kwcm0doqoqn9l8dftuqa"
-          alt="img"
+          src={props.dta.rtname}
           className="rt-img"
         />
         <h3 className="card-head">Meghna Food</h3>
@@ -86,7 +86,7 @@ const Body = () => {
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard/>
+        <Restorentcard dta={data[0]}/>
       </div>
     </div>
   );
