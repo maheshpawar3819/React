@@ -46,53 +46,45 @@ const Header = () => {
   );
 };
 
-
-
-
-
-
 //Restorent Card Component
 
 const Restorentcard = (props) => {
-//destructuring obj
+  //destructuring obj
 
-const {dta}=props;
+  const { restorent } = props;
 
   return (
     <div className="card-main-container">
       <div className="card-container">
-        <img
-          src={dta.img}
-          className="rt-img"
-        />
-        <h3 className="card-head">{dta.rtname}</h3>
+        <img src={restorent.img} className="rt-img" />
+        <h3 className="card-head">{restorent.rtname}</h3>
         <p id="str-rating">
-          <span className="rating">{dta.Ratings}</span>
+          <span className="rating">{restorent.Ratings}</span>
         </p>
-        <p>{dta.menu}</p>
+        <p>{restorent.menu}</p>
 
-        <p>{dta.location}</p>
+        <p>{restorent.location}</p>
       </div>
     </div>
   );
 };
 
-const data=[
+const data = [
   {
-    img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
-    rtname:"Arbain Mandi",
-    Ratings:"4.5 30-40 Min",
-    menu:"North indian biryani",
-    location:"Phaltan",
-  }
-]
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+];
 
 //Body Component
-const Body = () => {
+const Body = () restorent
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard dta={data}/>
+        <Restorentcard restroent={data}/>
       </div>
     </div>
   );
