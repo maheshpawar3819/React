@@ -49,6 +49,34 @@ const Header = () => {
 
 
 
+
+
+//Restorent Card Component
+
+const Restorentcard = (props) => {
+//destructuring obj
+
+const {dta}=props;
+
+  return (
+    <div className="card-main-container">
+      <div className="card-container">
+        <img
+          src={dta.img}
+          className="rt-img"
+        />
+        <h3 className="card-head">{dta.rtname}</h3>
+        <p id="str-rating">
+          <span className="rating">{dta.Ratings}</span>
+        </p>
+        <p>{dta.menu}</p>
+
+        <p>{dta.location}</p>
+      </div>
+    </div>
+  );
+};
+
 const data=[
   {
     img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
@@ -59,34 +87,12 @@ const data=[
   }
 ]
 
-//Restorent Card Component
-
-const Restorentcard = (props) => {
-  return (
-    <div className="card-main-container">
-      <div className="card-container">
-        <img
-          src={props.dta.rtname}
-          className="rt-img"
-        />
-        <h3 className="card-head">Meghna Food</h3>
-        <p id="str-rating">
-          Ratings<span className="rating"> 4.5 </span>30-40 mins
-        </p>
-        <p>South Indian Biryani</p>
-
-        <p> Nare</p>
-      </div>
-    </div>
-  );
-};
-
 //Body Component
 const Body = () => {
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard dta={data[0]}/>
+        <Restorentcard dta={data}/>
       </div>
     </div>
   );
