@@ -54,7 +54,7 @@ const Restaurentcard = (props) => {
   const { restaurent } = props;
 
   return (
-    <div className="card-main-container">
+    
       <div className="card-container">
         <img src={restaurent.img} className="rt-img" />
         <h3 className="card-head">{restaurent.rtname}</h3>
@@ -65,11 +65,18 @@ const Restaurentcard = (props) => {
 
         <p>{restaurent.location}</p>
       </div>
-    </div>
+
   );
 };
 
 const data = [
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
   {
     img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
     rtname: "Arbain Mandi",

@@ -106,7 +106,9 @@
 }
 
 .rest-container{
+    width: 100%;
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
 }
