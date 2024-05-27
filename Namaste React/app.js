@@ -8,9 +8,9 @@ Plan:
   -Navitems
 *Body
   -search
-  -restorent container
-  -restorent card
-    -Name of restorent,Star rating,cuisine,delivery time
+  -restaurent container
+  -restaurent card
+    -Name of restaurent,Star rating,cuisine,delivery time
 *Footer
   -Copyright
   -Links
@@ -46,24 +46,24 @@ const Header = () => {
   );
 };
 
-//Restorent Card Component
+//restaurent Card Component
 
-const Restorentcard = (props) => {
+const Restaurentcard = (props) => {
   //destructuring obj
 
-  const { restorent } = props;
+  const { restaurent } = props;
 
   return (
     <div className="card-main-container">
       <div className="card-container">
-        <img src={restorent.img} className="rt-img" />
-        <h3 className="card-head">{restorent.rtname}</h3>
+        <img src={restaurent.img} className="rt-img" />
+        <h3 className="card-head">{restaurent.rtname}</h3>
         <p id="str-rating">
-          <span className="rating">{restorent.Ratings}</span>
+          <span className="rating">{restaurent.Ratings}</span>
         </p>
-        <p>{restorent.menu}</p>
+        <p>{restaurent.menu}</p>
 
-        <p>{restorent.location}</p>
+        <p>{restaurent.location}</p>
       </div>
     </div>
   );
@@ -77,14 +77,72 @@ const data = [
     menu: "North indian biryani",
     location: "Phaltan",
   },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
+  {
+    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kyazotklprl8in3rlzmf",
+    rtname: "Arbain Mandi",
+    Ratings: "4.5 30-40 Min",
+    menu: "North indian biryani",
+    location: "Phaltan",
+  },
 ];
 
 //Body Component
-const Body = () =>{
+const Body = () => {
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard restorent={data}/>
+        {data.map((restaurent, index) => {
+          return <Restaurentcard key={index} restaurent={restaurent} />;
+        })}
       </div>
     </div>
   );
