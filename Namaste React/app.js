@@ -80,11 +80,11 @@ const data = [
 ];
 
 //Body Component
-const Body = () restorent
+const Body = () =>{
   return (
     <div className="body">
       <div className="rest-container">
-        <Restorentcard restroent={data}/>
+        <Restorentcard restorent={data}/>
       </div>
     </div>
   );
