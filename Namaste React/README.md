@@ -14,3 +14,12 @@
 -Diffrential Bundling => Support Older Browsers
 -Good Error handling
 -Https
+
+--There are two types of Export and Import in React
+    1.Default Export/Import
+      -Export default component;
+      -Import component from "path"
+
+    2.Named Export/Import
+     -Export const component
+     -Import {component} from "path"
