@@ -114,6 +114,23 @@
 }
 
 
-.ft-text{
+.ft-text {
     text-align: center;
+}
+
+.filter-btn {
+    background-color: #414449;
+    padding: 10px 20px;
+    margin: 5px;
+    margin-left: 65px;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+    letter-spacing: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #414449ad;
 }

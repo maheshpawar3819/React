@@ -23,3 +23,9 @@
     2.Named Export/Import
      -Export const component
      -Import {component} from "path"
+
+#React Hooks
+ -They are normal JavaScript Utility functions.
+  (There are two most important hooks in react)
+   -1.useState()
+   -2.useEffect()
