@@ -29,3 +29,9 @@
   (There are two most important hooks in react)
    -1.useState()
    -2.useEffect()
+
+
+#Routing in React
+ -There are two types of routing
+  -1.Client side routing
+  -2.Server side routing   
