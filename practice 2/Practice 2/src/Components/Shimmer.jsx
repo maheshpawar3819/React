@@ -1,15 +1,25 @@
-import React from 'react'
+import React from "react";
 
 const Shimmer = () => {
   return (
-    <div className='s-div'>
+    <div className="s-div">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-  )
-}
+  );
+};
 
-export default Shimmer
+export default Shimmer;

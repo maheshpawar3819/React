@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import Cards from "./Cards";
+import Shimmer from "./Shimmer";
 const Body = () => {
   const [data, setdata] = useState([]);
 
@@ -22,7 +23,9 @@ const Body = () => {
     fetchdata();
   }, []);
 
-  return (
+  return data.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div>
       <header className="body-header">
         <h2>Shopping Cart</h2>
