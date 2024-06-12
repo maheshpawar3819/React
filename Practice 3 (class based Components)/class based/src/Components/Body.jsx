@@ -1,27 +1,44 @@
 import React from "react";
-import Card from "./Card";
+
 class Body extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      userinfo: {
+        avatar_url: "",
+        name: "",
+        following: 0,
+        followers: 0,
+        public_repos: 0,
+        url: "",
+      },
+    };
   }
 
   async componentDidMount() {
-    //used to make api calls
-    const data = await fetch("https://api.github.com/users/maheshpawar3819");
+    const getdata = await fetch("https://api.github.com/users/maheshpawar3819");
     //convert this data in json format
-
-    let json = await data.json();
+    const json = await getdata.json();
     console.log(json);
+    this.setState({
+      userinfo: json,
+    });
   }
-
+  f;
   render() {
+    //destructure ths data
+
+    const { avatar_url, name, following, followers, public_repos, url } =
+      this.state.userinfo;
     return (
       <>
-        <div>
-          {console.log("parent-render")}
-          <h1>Hii i am body component</h1>
-          {/* <Card name={"first"} education={"BCA"} location={"Phaltan"} /> */}
-        </div>
+        <img src={avatar_url} alt="" />
+        <h1>User Name:{name}</h1>
+        <h2>Following:{following}</h2>
+        <h2>Followers:{followers}</h2>
+        <h3>Public_Repos:{public_repos}</h3>
+        <h6>Url:{url}</h6>
       </>
     );
   }
