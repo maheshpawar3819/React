@@ -17,8 +17,8 @@ class State extends React.Component {
             });
           }}
         >
-            {console.log(this.state.count)}
-        {this.state.count}
+          {/* {console.log(this.state.count)} */}
+          {this.state.count}
         </button>
       </>
     );
