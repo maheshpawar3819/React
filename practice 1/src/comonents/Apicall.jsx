@@ -1,36 +1,17 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-import { useState } from "react";
+import React from "react";
+import useFakedata from "./Utilis/useFakedata";
 
 const Apicall = () => {
-  const [state, setState] = useState([]);
-
-  const Products = () => {
-    axios
-      .get(`https://fakestoreapi.com/products`)
-      .then((response) => {
-        setState(response.data);
-        console.log(response)
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
-  useEffect(() => {
-    Products();
-  }, []);
-
+  const info = useFakedata();
   return (
     <div className="row" style={{ width: "100vw" }}>
       <h1 className="text-secondary " style={{ textAlign: "center" }}>
         Cloth Store
       </h1>
-      {state.map((ele) => {
-       
+      {info.map((ele) => {
         return (
           <div
-          key={ele.id}
+            key={ele.id}
             className="col-4 p-4"
             style={{ border: "box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
           >
