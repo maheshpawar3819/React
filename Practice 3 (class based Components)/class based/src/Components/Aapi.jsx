@@ -1,5 +1,5 @@
 import React from "react";
-import Axios from "axios"
+import Axios from "axios";
 class Aapi extends React.Component {
   constructor(props) {
     super(props);
@@ -7,12 +7,14 @@ class Aapi extends React.Component {
 
   //in this component i will try to fetch api using axios librabry
 
-  componentDidMount(){
-    Axios.get("https://api.github.com/users/maheshpawar3819").then((response) => {
+  componentDidMount() {
+    Axios.get("https://api.github.com/users/maheshpawar3819")
+      .then((response) => {
         console.log(response);
-    } ).catch(() => {
+      })
+      .catch(() => {
         console.log("error is found");
-    })
+      });
   }
 
   render() {

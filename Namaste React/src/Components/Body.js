@@ -4,9 +4,10 @@ const Body = () => {
   return (
     <div className="body">
       <div>
-        <button className="filter-btn"
+        <button
+          className="filter-btn"
           onClick={() => {
-            console.log("click me")
+            console.log("click me");
           }}
         >
           <svg
