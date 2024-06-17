@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import Sw from "./comonents/Sw";
 import "./App.css";
 import Webseries from "./comonents/Webseries";
+import Starwarsapi from "./comonents/Starwarsapi";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -11,7 +12,8 @@ function App() {
     <>
       {/* <Apicall/> */}
       {/* <Sw/> */}
-      <Webseries/>
+      {/* <Webseries/> */}
+      <Starwarsapi/>
     </>
   );
 }
