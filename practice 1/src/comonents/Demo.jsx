@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Demochild from "./Demochild";
 import useFetchapidemo from "./Hooks/useFetchapidemo";
+import Demodata from "./Demodata";
 const Demo = () => {
   const [data, setData] = useState("hii mahi");
 
@@ -23,6 +24,7 @@ const Demo = () => {
             />
           );
         })}
+        <Demodata/>
       </div>
     </div>
   );
