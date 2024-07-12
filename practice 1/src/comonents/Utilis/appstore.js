@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import demoReducer from "./demoslice"
-const appsotre = configureStore({
+import demoReducer from "./demoslice";
+
+const store = configureStore({
   reducer: {
     demo: demoReducer,
   },
 });
 
-export default appsotre;
+export default store;
