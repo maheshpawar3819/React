@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Tndbapicall from "./comonents/Tndbapicall";
+import Demo from "./comonents/Demo";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -10,7 +11,8 @@ function App() {
       {/* <Sw/> */}
       {/* <Webseries/> */}
       {/* <Starwarsapi/> */}
-      <Tndbapicall />
+      {/* <Tndbapicall /> */}
+      <Demo/>
     </>
   );
 }
