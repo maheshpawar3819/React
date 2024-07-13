@@ -13,7 +13,7 @@ const useFetchmovies = () => {
         Options
       )
       .then((moviesdata) => {
-        console.log(moviesdata?.data?.results);
+        // console.log(moviesdata?.data?.results);
         dispatch(addmovies(moviesdata?.data?.results));
       })
       .catch((error) => {

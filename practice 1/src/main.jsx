@@ -5,9 +5,7 @@ import "./index.css";
 import { Provider } from "react-redux";
 import appsotre from "./comonents/Utilis/appstore.js";
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Provider store={appsotre}>
-      <App />
-    </Provider>
-  </React.StrictMode>
+  <Provider store={appsotre}>
+    <App />
+  </Provider>
 );
