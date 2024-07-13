@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Demo from "./comonents/Demo";
+
+import ApiSearchmovies from "./comonents/ApiSearchmovies";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +13,8 @@ function App() {
       {/* <Webseries/> */}
       {/* <Starwarsapi/> */}
       {/* <Tndbapicall /> */}
-      <Demo/>
+      {/* <Demo/> */}
+      <ApiSearchmovies />
     </>
   );
 }
