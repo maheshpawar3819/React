@@ -16,6 +16,7 @@ function App() {
       {/* <Tndbapicall /> */}
       {/* <Demo/> */}
       {/* <ApiSearchmovies /> */}
+      <Apicall2/>
     </>
   );
 }
